@@ -1,0 +1,170 @@
+:root {
+    --primary:#148812;
+    --white:#fff;
+    --black:#000;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.container-fluid {
+    margin: 0;
+    padding: 0;
+}
+
+#point-map {
+    position:absolute;
+    pointer-events: none;
+}
+
+canvas {
+    position:absolute;
+    pointer-events:none;
+}
+
+#reset-view {
+    position: absolute;
+    z-index: 2;
+    top: 15%;
+    right: 2%;
+    background-color: white;
+    padding: 0.4em 0.5em;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+/* map styling */
+#map {
+    position:absolute; 
+    width:1368px; 
+    height: 850px;
+    /* background-color: black; */
+}
+
+.mapboxgl-interactive {
+    height:850px;
+}
+
+.mapboxgl-popup {
+    z-index: 2;
+}
+
+.mapboxgl-popup-content {
+    padding:0 !important;
+    font-size: 1rem;
+}
+
+.popup-content .popup-title {
+    background-color: #ddd;
+    padding: 3px 10px 3px 4px;
+}
+
+.popup-content .description {
+    padding: 10px 10px 15px
+}
+
+/* particle system container */
+#renderer-container {
+    height: 700px;
+    width: 1368px;
+    background-color: transparent;
+}
+
+/* origin destination filer */
+.filter-panel {
+    position: absolute;
+    top:2%;
+    left: 1%;
+    height: auto;
+    width: 300px;
+    padding:0.5rem 0.25rem;
+    background-color: transparent;
+    z-index: 2;
+    box-shadow: 2px 2px 0.3em rgb(88, 88, 88);
+}
+
+.country-filter {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background-color: var(--white);
+    padding:0.5rem 0.25rem;
+    margin-bottom: 1em;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group {
+    margin-bottom: 0.7em;
+}
+
+#suggestions {
+    position: absolute;
+    top: 16%;
+    left: 2%;
+    right: 2%;
+    box-shadow: 2px 2px 0.5em black;
+}
+
+#suggestions .list-group-item:hover {
+    background-color:blue;
+    color:white;
+}
+
+.year-filter {
+    position: absolute;
+    top: 2%;
+    right: 4%;
+    background-color: var(--white);
+    padding: 0.25rem 0.5rem;
+    display: flex;
+    justify-content: space-between;
+    width: 150px;
+}
+
+.attribute-filter {
+    background-color: var(--white);
+    height: auto;
+    padding:0.5rem 0.25rem;
+}
+
+/* slider container */
+.slider-panel {
+    position: absolute;
+    bottom: 2%;
+    width: 80%;
+    height: 100px;
+    background-color: var(--white);
+    left: 10%;
+    display: flex;
+    justify-content: flex-start;
+    /* align-items: center; */
+    padding: 0.375rem 0.5rem;
+}
+
+.animate-slider {
+    color:var(--black);
+    font-size: 2em;
+    margin-right: 1em;
+}
+
+/* svg styling */
+.feature {
+
+}
+
+.hidden, .d-none {
+    display: none !important;
+}
+.
+/* media query tablets screens*/
+
+/* media query Large screens*/
+@media(max-width:50em) {
+
+}
